@@ -63,7 +63,7 @@ permissions:
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -94,6 +94,6 @@ jobs:
         with:
           folder: _site
       - name: Fix permission
-        run: |
+        run: | 
           chmod a+x bin/*
           git commit -am "add execulte permission to bin/deploy"
