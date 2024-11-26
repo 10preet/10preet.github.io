@@ -709,6 +709,11 @@ section,
   z-index: 3;
 }
 
+.about .container {
+  max-width: 90%; /* Adjust width */
+  margin: auto;
+}
+
 .hero h2 {
   margin: 0;
   font-size: 64px;
